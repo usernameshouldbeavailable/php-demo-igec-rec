@@ -7,6 +7,10 @@
     $_SESSION["useremail"] = "avinash@edunetfoundation.org";
 
     // to get session value
-    echo $_SESSION["useremail"];
+    if(isset($_SESSION["useremail"])) {
+        echo "Session value is set";
+    } else {
+        echo "Session value is missing";
+    }
 
 ?>
