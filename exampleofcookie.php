@@ -9,6 +9,8 @@
     if(isset($_GET["lang"]))
     {
         setcookie("lang", $_GET["lang"]);
+        header("Location: exampleofcookie.php");
+        exit();
     }
 
     // getting user preference
