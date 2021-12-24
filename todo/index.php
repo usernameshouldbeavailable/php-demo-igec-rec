@@ -6,10 +6,6 @@
 
     $todoResult = mysqli_query($mysqli, $selectQuery);
 
-    // $todoArray = mysqli_fetch_array($todoResult);
-
-    // print_r($todoArray);
-
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -54,7 +50,7 @@
                 {
                     echo '<td class="done">Completed</td>';
                 }
-                echo '<td><a href="">Edit</a></td>';
+                echo '<td><a href="edit.php?id=' . $todoArray['id'] . '">Edit</a></td>';
                 echo '</tr>';
             }
         
