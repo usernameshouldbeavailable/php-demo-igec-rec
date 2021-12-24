@@ -1,6 +1,5 @@
 <?php
 
-
     $databaseHost = "localhost"; // facebook.com instagram.com microsoft.com
 
     $databaseUser = "root";
