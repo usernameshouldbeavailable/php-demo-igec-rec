@@ -28,12 +28,14 @@
 </head>
 <body>
     <h1>Your Pending Todo</h1>
+    <p><a href="insert.php">Insert a new Item</a></p>
     <table border="2px">
         <tr>
             <td>Id</td>
             <td>Task Name</td>
             <td>Status</td>
             <td>Edit</td>
+            <td>Remove</td>
         </tr>
         <?php
         
@@ -51,6 +53,7 @@
                     echo '<td class="done">Completed</td>';
                 }
                 echo '<td><a href="edit.php?id=' . $todoArray['id'] . '">Edit</a></td>';
+                echo '<td><a href="remove.php?id=' . $todoArray['id'] . '">Remove</a></td>';
                 echo '</tr>';
             }
         
