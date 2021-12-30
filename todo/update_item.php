@@ -12,6 +12,10 @@
 
     mysqli_query($mysqli, $updateQuery);
 
-    echo "Your task <strong>{$task_name}</strong> updated successfully!";
+    $message = "Your task <strong>{$task_name}</strong> updated successfully!";
+
+    header('Location: index.php?message=' . urlencode($message));
+    
+    exit;
 
 ?>

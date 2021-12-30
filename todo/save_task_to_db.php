@@ -8,6 +8,10 @@
 
     mysqli_query($mysqli, $insertQuery);
 
-    echo "Your task <strong>{$task_name}</strong> added successfully!";
+    $message = "Your task <strong>{$task_name}</strong> added successfully!";
+    
+    header('Location: index.php?message=' . urlencode($message));
+    
+    exit;
 
 ?>

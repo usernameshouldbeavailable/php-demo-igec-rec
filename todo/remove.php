@@ -8,6 +8,10 @@
 
     $todoResult = mysqli_query($mysqli, $selectQuery);
 
-    echo 'Item removed from your todo!';
+    $message = 'Item removed from your todo!';
+
+    header('Location: index.php?message=' . urlencode($message));
+    
+    exit;
 
 ?>

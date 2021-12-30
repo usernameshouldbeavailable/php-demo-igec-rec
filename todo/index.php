@@ -27,7 +27,15 @@
     </style>
 </head>
 <body>
-    <h1>Your Pending Todo</h1>
+    <h1>Your Pending Todo: CRUD Application</h1>
+    <?php
+    
+        if(isset($_GET['message']))
+        {
+            echo $_GET['message'];
+        }
+    
+    ?>
     <p><a href="insert.php">Insert a new Item</a></p>
     <table border="2px">
         <tr>
